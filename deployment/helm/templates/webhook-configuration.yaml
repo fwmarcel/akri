@@ -109,7 +109,7 @@ items:
               effect: NoSchedule
             {{- end }}
             {{- if .Values.webhookConfiguration.tolerations }}
-            {{- toYaml .Values.controller.tolerations | nindent 2 }}
+            {{- toYaml .Values.controller.tolerations | nindent 12 }}
             {{- end }}
           {{- end }}
           nodeSelector:
